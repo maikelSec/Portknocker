@@ -56,4 +56,4 @@ iptables -A WALL -j KNOCK1
 
 #Keeps rules implemented even after reboot
 apt-get install iptables-persistent
-/sbin/iptables-save > /etc/iptables/rules
+service iptables-persistent start
